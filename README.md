@@ -5,41 +5,10 @@
 This is the official implementation of the paper "[End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission](https://github.com/gzyao/detr-project)". 
 
 Authors: [Lixin he]\*, [Guangzhuang Yao]\*,[Zhi Cheng]\*,[Xiaofeng Wang]\*,[Zhi Hu]\*,[Luqing Ge]\*,[Jie Li]\*.
-# News
-[2023/4/28]: We release a strong open-set object detection and segmentation model [OpenSeeD](https://arxiv.org/pdf/2303.08131.pdf) that achieves the best results on open-set object segmentation tasks. Code and checkpoints are available [here](https://github.com/IDEA-Research/OpenSeeD).
-</br>
-[2023/4/26]: DINO is shining again! We release [Stable-DINO](https://github.com/IDEA-Research/Stable-DINO) which is built upon DINO and [FocalNet-Huge](https://github.com/microsoft/FocalNet) backbone that achieves `64.8 AP` on COCO test-dev. </br>
-[2023/4/22]: With better hyper-params, our DINO-4scale model achieves `49.8 AP` under 12ep settings, please check [detrex: DINO](https://github.com/IDEA-Research/detrex/tree/main/projects/dino) for more details.</br>
-[2023/3/13]: We release a strong open-set object detection model [Grounding DINO](https://arxiv.org/abs/2303.05499) that achieves the best results on open-set object detection tasks. It achieves **52.5** **zero-shot** AP on COCO detection, **without any COCO training data!** It achieves **63.0** AP on COCO after fine-tuning. Code and checkpoints will be available [here](https://github.com/IDEA-Research/GroundingDINO).
-</br>
-[2023/1/23]: DINO has been accepted to ICLR 2023!</br>
-[2022/12/02]: Code for [Mask DINO](https://github.com/IDEA-Research/MaskDINO) is released (also in [detrex](https://github.com/IDEA-Research/detrex/tree/main/projects/maskdino))! Mask DINO further Achieves **51.7** and **59.0** box AP on COCO with a ResNet-50 and SwinL without extra detection data, **outperforming DINO** under the same setting!. </br>
-[2022/9/22]: We release a toolbox <font size=4>[**detrex**](https://github.com/IDEA-Research/detrex)</font> that provides state-of-the-art Transformer-based detection algorithms. It includes DINO **with better performance**. Welcome to use it! </br>
-  - Supports Now: [DETR](https://arxiv.org/abs/2005.12872), [Deformble DETR](https://arxiv.org/abs/2010.04159), [Conditional DETR](https://arxiv.org/abs/2108.06152), [DAB-DETR](https://arxiv.org/abs/2201.12329), [DN-DETR](https://arxiv.org/abs/2203.01305), [DINO](https://arxiv.org/abs/2203.03605).
+# Abstract
+This study proposes an end-to-end target detection model that significantly improves accuracy, particularly for both large and small targets. The key innovations lie in the hierarchical convolution modulation of deformable attention and a sparse feature transmission strategy. By modulating deformable attention with convolution, our approach enables effective extraction of both global and local features. Additionally, a deep-shallow layered convolutional module is employed to enhance coarse- and fine-grained feature extraction. The sparse transmission strategy ensures optimal feature output from the encoder layers. Experimental results on the MS-COCO dataset demonstrate the effectiveness of our approach, achieving state-of-the-art performance with notable gains in detection accuracy for both small and large targets.
 
-[2022/9/18]: We organize **ECCV Workshop** [*Computer Vision in the Wild (CVinW)*](https://computer-vision-in-the-wild.github.io/eccv-2022/), where two challenges are hosted to evaluate the zero-shot, few-shot and full-shot performance of pre-trained vision models in downstream tasks:
-
-  - [``*Image Classification in the Wild (ICinW)*''](https://eval.ai/web/challenges/challenge-page/1832/overview) Challenge evaluates on 20 image classification tasks.
-  - [``*Object Detection in the Wild (ODinW)*''](https://eval.ai/web/challenges/challenge-page/1839/overview) Challenge evaluates on 35 object detection tasks.
-
- &emsp; &emsp; [ <img src="https://computer-vision-in-the-wild.github.io/eccv-2022/static/eccv2022/img/ECCV-logo3.png" width=10%/> [Workshop]](https://computer-vision-in-the-wild.github.io/eccv-2022/)    &emsp; &emsp; &emsp; &emsp;    [<img src="https://evalai.s3.amazonaws.com/media/logos/4e939412-a9c0-46bd-9797-5ba0bd0a9095.jpg" width=10%/> [IC Challenge] ](https://eval.ai/web/challenges/challenge-page/1832/overview)
-&emsp; &emsp; &emsp; &emsp;    [<img src="https://evalai.s3.amazonaws.com/media/logos/3a31ae6e-a990-48fb-b2c3-1e7da9d17a20.jpg" width=10%/> [OD Challenge] ](https://eval.ai/web/challenges/challenge-page/1839/overview) 
-</br> 
-[2022/8/6]: We update Swin-L model results without techniques such as O365 pre-training, large image size, and multi-scale test. We also upload the corresponding checkpoints to [Google Drive.](https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing) Our 5-scale model without any tricks obtains 58.5 AP on COCO val.</br>
-[2022/7/14]: We release the code with Swin-L and Convnext backbone. </br> 
-[2022/7/10]: We release the code and checkpoints with Resnet-50 backbone. </br>
-[2022/6/7]: We release a unified detection and segmentation model [Mask DINO](https://arxiv.org/pdf/2206.02777.pdf) that achieves the best results on all the three segmentation tasks (**54.7** AP on [COCO instance leaderboard](https://paperswithcode.com/sota/instance-segmentation-on-coco), **59.5** PQ on [COCO panoptic leaderboard](https://paperswithcode.com/sota/panoptic-segmentation-on-coco-test-dev), and **60.8** mIoU on [ADE20K semantic leaderboard](https://paperswithcode.com/sota/semantic-segmentation-on-ade20k))! Code will be available [here](https://github.com/IDEACVR/MaskDINO).
-</br>
-[2022/5/28] Code for [DN-DETR](https://arxiv.org/pdf/2203.01305.pdf) is available [here](https://github.com/IDEA-opensource/DN-DETR).
-</br>
-[2020/4/10]: Code for [DAB-DETR](https://arxiv.org/abs/2201.12329) is avaliable [here](https://github.com/SlongLiu/DAB-DETR).
-</br>
-[2022/3/8]: We reach the SOTA on [MS-COCO leader board](https://paperswithcode.com/sota/object-detection-on-coco) with **63.3AP**!
-</br>
-[2022/3/9]: We build a repo [Awesome Detection Transformer](https://github.com/IDEACVR/awesome-detection-transformer) to present papers about transformer for detection and segmenttion. Welcome to your attention!
-
-![SOTA results](figs/sota.jpg "results on MSCOCO")
-# Introduction
+# Highlights
 We present **DINO** (**D**ETR with **I**mproved de**N**oising anch**O**r
 boxes) with:
 
