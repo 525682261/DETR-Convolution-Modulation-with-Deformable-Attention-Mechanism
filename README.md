@@ -1,2 +1,1 @@
-# DETR-Convolution-Modulation-with-Deformable-Attention-Mechanism
-An end-to-end Object Detection Method based on Hierarchical Convolution Modulation with Deformable Attention Mechanism and Sparse Transmission Strategy
+# End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission
