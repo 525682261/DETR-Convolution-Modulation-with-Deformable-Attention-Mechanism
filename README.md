@@ -19,8 +19,7 @@ This study proposes an end-to-end target detection model that significantly impr
 ![method](figs/f1.png "model arch")
 
 
-## Model Zoo
-We have put our model checkpoints here [[model zoo in Google Drive]](https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing)[[model zoo in 百度网盘]](https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ)（提取码"DINO"), where checkpoint{x}_{y}scale.pth denotes the checkpoint of y-scale model trained for x epochs. 
+## Experimental
 
 ### 12 epoch setting
 <table>
