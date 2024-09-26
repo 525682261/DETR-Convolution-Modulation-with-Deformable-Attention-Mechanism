@@ -20,7 +20,7 @@ This study proposes an end-to-end target detection model that significantly impr
 
 
 ## Experimental
-![method](figs/table1.png "model arch")
+![Experimental](figs/table1.png "model arch")
 
 ### 12 epoch setting
 <table>
