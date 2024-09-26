@@ -16,7 +16,7 @@ This study proposes an end-to-end target detection model that significantly impr
 
 
 # Methods
-![method](figs/framework.png "model arch")
+![method](figs/f1.png "model arch")
 
 
 ## Model Zoo
