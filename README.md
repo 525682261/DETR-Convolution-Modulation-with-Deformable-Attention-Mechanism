@@ -46,19 +46,15 @@ This study proposes an end-to-end target detection model that significantly impr
 
 ## Run
 <details>
-  <summary>2. Inference and Visualizations</summary>
+  <summary>1. Inference and Visualizations</summary>
 
-For inference and visualizations, we provide a [notebook](inference_and_visualization.ipynb) as an example.
+For inference and visualizations, we provide a inference.py as an example.
 
 </details>
 
 <details>
-  <summary>3. Train a 4-scale model for 12 epochs</summary>
-
-We use the DINO 4-scale model trained for 12 epochs as an example to demonstrate how to evaluate and train our model.
-
-You can also train our model on a single process:
-```sh
-bash scripts/DINO_train.sh /path/to/your/COCODIR
-```
+  <summary>2. Train a 4-scale model for 12 epochs</summary>
+  
+We use the 4-scale model trained for 12 epochs as an example to demonstrate how to evaluate and train our model.
+Replace your corresponding path in the main. py file and execute：python main. py.
 </details>
