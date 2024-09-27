@@ -24,6 +24,7 @@ This study proposes an end-to-end target detection model that significantly impr
 # Detection effect comparison with DINO
 ## small targets
 ![small targets](figs/small-targets.png)
+<img src="figs/small-targets.png" alt="small targets" style="width: 50%; height: auto;" />
 
 ## big targets
 ![big targets](figs/big-targets.png)
