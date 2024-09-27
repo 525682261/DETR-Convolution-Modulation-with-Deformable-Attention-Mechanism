@@ -17,10 +17,7 @@ COCODIR/
   	├── instances_train2017.json
   	└── instances_val2017.json
 ```
-
 </details>
-[Target Detection Dataset：coco2017-download](https://cocodataset.org/#download)
-
 
 # Abstract
 This study proposes an end-to-end target detection model that significantly improves accuracy, particularly for both large and small targets. The key innovations lie in the hierarchical convolution modulation of deformable attention and a sparse feature transmission strategy. By modulating deformable attention with convolution, our approach enables effective extraction of both global and local features. Additionally, a deep-shallow layered convolutional module is employed to enhance coarse- and fine-grained feature extraction. The sparse transmission strategy ensures optimal feature output from the encoder layers. Experimental results on the MS-COCO dataset demonstrate the effectiveness of our approach, achieving state-of-the-art performance with notable gains in detection accuracy for both small and large targets.
@@ -134,71 +131,5 @@ To **leverage our pre-trained models** for model fine-tuning, we suggest add two
 - `--pretrain_model_path /path/to/a/pretrianed/model`. specify a pre-trained model.
 - `--finetune_ignore label_enc.weight class_embed`. ignore some inconsistent parameters.
 
-
 </details>
 
-
-
-
-# Links
-Our model is based on [DAB-DETR](https://arxiv.org/abs/2201.12329) and [DN-DETR](https://arxiv.org/abs/2203.01305).
-<p>
-<font size=3><b>DN-DETR: Accelerate DETR Training by Introducing Query DeNoising.</b></font>
-<br>
-<font size=2>Feng Li*, Hao Zhang*, Shilong Liu, Jian Guo, Lionel M. Ni, Lei Zhang.</font>
-<br>
-<font size=2>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) 2022.</font>
-<br>
-<a href='https://arxiv.org/abs/2203.01305'>[paper]</a> <a href='https://github.com/FengLi-ust/DN-DETR'>[code]</a> <a href='https://www.zhihu.com/question/517340666/answer/2381304399'>[中文解读]</a>
-</p>
-
-<p>
-<font size=3><b>DAB-DETR: Dynamic Anchor Boxes are Better Queries for DETR.</b></font>
-<br>
-<font size=2>Shilong Liu, Feng Li, Hao Zhang, Xiao Yang, Xianbiao Qi, Hang Su, Jun Zhu, Lei Zhang.</font>
-<br>
-<font size=2>International Conference on Learning Representations (<b>ICLR</b>) 2022.</font>
-<br>
-<a href='https://arxiv.org/abs/2201.12329'>[paper]</a> <a href='https://github.com/SlongLiu/DAB-DETR'>[code]</a>    
-</p>
-
-We also thank great previous work including DETR, Deformable DETR, SMCA, Conditional DETR, Anchor DETR, Dynamic DETR, etc. More related work are available at [Awesome Detection Transformer](https://github.com/IDEACVR/awesome-detection-transformer).
-
-## LICNESE
-DINO is released under the Apache 2.0 license. Please see the [LICENSE](LICNESE) file for more information.
-
-Copyright (c) IDEA. All rights reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
-# Bibtex
-If you find our work helpful for your research, please consider citing the following BibTeX entry.   
-```bibtex
-@misc{zhang2022dino,
-      title={DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection}, 
-      author={Hao Zhang and Feng Li and Shilong Liu and Lei Zhang and Hang Su and Jun Zhu and Lionel M. Ni and Heung-Yeung Shum},
-      year={2022},
-      eprint={2203.03605},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@inproceedings{li2022dn,
-      title={Dn-detr: Accelerate detr training by introducing query denoising},
-      author={Li, Feng and Zhang, Hao and Liu, Shilong and Guo, Jian and Ni, Lionel M and Zhang, Lei},
-      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-      pages={13619--13627},
-      year={2022}
-}
-
-@inproceedings{
-      liu2022dabdetr,
-      title={{DAB}-{DETR}: Dynamic Anchor Boxes are Better Queries for {DETR}},
-      author={Shilong Liu and Feng Li and Hao Zhang and Xiao Yang and Xianbiao Qi and Hang Su and Jun Zhu and Lei Zhang},
-      booktitle={International Conference on Learning Representations},
-      year={2022},
-      url={https://openreview.net/forum?id=oMI9PjOb9Jl}
-}
-```
