@@ -1,5 +1,5 @@
 # End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission <img src="figs/dinosaur.png" width="30">
-[Object Detection Dataset：coco2017-download](https://cocodataset.org/#download)
+[Target Detection Dataset：coco2017-download](https://cocodataset.org/#download)
 
 This is the official implementation of the paper "[End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission](https://github.com/gzyao/detr-project)". 
 
