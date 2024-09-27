@@ -1,5 +1,5 @@
 # End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission <img src="figs/dinosaur.png" width="30">
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dino-detr-with-improved-denoising-anchor-1/coco2017-download)](https://cocodataset.org/#download)
+[![coco2017-download]](https://cocodataset.org/#download)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dino-detr-with-improved-denoising-anchor-1/object-detection-on-coco)](https://paperswithcode.com/sota/object-detection-on-coco?p=dino-detr-with-improved-denoising-anchor-1)
 
 This is the official implementation of the paper "[End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission](https://github.com/gzyao/detr-project)". 
