@@ -23,12 +23,10 @@ This study proposes an end-to-end target detection model that significantly impr
 
 # Detection effect comparison with DINO
 ## small targets
-<div style="text-align: center;">
-    <img src="figs/small-targets.png" alt="small targets" style="width: 50%; height: auto;" />
-</div>
+<img src="figs/small-targets.png" alt="small targets" style="width: 50%; height: auto;" />
 
 ## big targets
-![big targets](figs/big-targets.png)
+<img src="figs/big-targets.png" alt="big targets" style="width: 50%; height: auto;" />
 
 
 ### 12 epoch setting
