@@ -1,9 +1,27 @@
 # End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission <img src="figs/dinosaur.png" width="30">
-[Target Detection Dataset：coco2017-download](https://cocodataset.org/#download)
 
 This is the official implementation of the paper "[End-to-End Target Detection Enhanced by Hierarchical Convolution Modulation and Sparse Attention Transmission](https://github.com/gzyao/detr-project)". 
 
 Authors: [Lixin he]\*, [Guangzhuang Yao]\*,[Zhi Cheng]\*,[Xiaofeng Wang]\*,[Zhi Hu]\*,[Luqing Ge]\*,[Jie Li]\*.
+
+## Data
+<details>
+  <summary>Data</summary>
+
+Please download [COCO 2017](https://cocodataset.org/) dataset and organize them as following:
+```
+COCODIR/
+  ├── train2017/
+  ├── val2017/
+  └── annotations/
+  	├── instances_train2017.json
+  	└── instances_val2017.json
+```
+
+</details>
+[Target Detection Dataset：coco2017-download](https://cocodataset.org/#download)
+
+
 # Abstract
 This study proposes an end-to-end target detection model that significantly improves accuracy, particularly for both large and small targets. The key innovations lie in the hierarchical convolution modulation of deformable attention and a sparse feature transmission strategy. By modulating deformable attention with convolution, our approach enables effective extraction of both global and local features. Additionally, a deep-shallow layered convolutional module is employed to enhance coarse- and fine-grained feature extraction. The sparse transmission strategy ensures optimal feature output from the encoder layers. Experimental results on the MS-COCO dataset demonstrate the effectiveness of our approach, achieving state-of-the-art performance with notable gains in detection accuracy for both small and large targets.
 
@@ -27,192 +45,6 @@ This study proposes an end-to-end target detection model that significantly impr
 
 ## big targets
 <img src="figs/big-targets.png" alt="big targets" style="width: 50%; height: auto;" />
-
-
-### 12 epoch setting
-<table>
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>name</th>
-      <th>backbone</th>
-      <th>box AP</th>
-      <th>Checkpoint</th>
-      <th>Where in <a href="https://arxiv.org/abs/2203.03605">Our Paper</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>DINO-4scale</td>
-      <td>R50</td>
-      <td>49.0</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp/&nbsp<a href="https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ">BaiDu</a>&nbsp</td>
-      <td>Table 1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>DINO-5scale</td>
-      <td>R50</td>
-      <td>49.4</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp/&nbsp<a href="https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ">BaiDu</a>&nbsp;</td>
-      <td>Table 1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>DINO-4scale</td>
-      <td>Swin-L</td>
-      <td>56.8</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>DINO-5scale</td>
-      <td>Swin-L</td>
-      <td>57.3</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 epoch setting
-<table>
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>name</th>
-      <th>backbone</th>
-      <th>box AP</th>
-      <th>Checkpoint</th>
-      <th>Where in <a href="https://arxiv.org/abs/2203.03605">Our Paper</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>DINO-4scale</td>
-      <td>R50</td>
-      <td>50.4</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp/&nbsp<a href="https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ">BaiDu</a>&nbsp</td>
-      <td>Table 2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>DINO-5scale</td>
-      <td>R50</td>
-      <td>51.3</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp/&nbsp<a href="https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ">BaiDu</a>&nbsp;</td>
-      <td>Table 2</td>
-    </tr>
-  </tbody>
-</table>
-
-### 36 epoch setting
-<table>
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>name</th>
-      <th>backbone</th>
-      <th>box AP</th>
-      <th>Checkpoint</th>
-      <th>Where in <a href="https://arxiv.org/abs/2203.03605">Our Paper</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>DINO-4scale</td>
-      <td>R50</td>
-      <td>50.9</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp/&nbsp<a href="https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ">BaiDu</a>&nbsp</td>
-      <td>Table 2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>DINO-5scale</td>
-      <td>R50</td>
-      <td>51.2</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp/&nbsp<a href="https://pan.baidu.com/s/1St5rvfgfPwpnPuf_Oe6DpQ">BaiDu</a>&nbsp;</td>
-      <td>Table 2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>DINO-4scale</td>
-      <td>Swin-L</td>
-      <td>58.0</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>DINO-5scale</td>
-      <td>Swin-L</td>
-      <td>58.5</td>
-      <td><a href="https://drive.google.com/drive/folders/1qD5m1NmK0kjE5hh-G17XUX751WsEG-h_?usp=sharing">Google Drive</a>&nbsp</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-## Installation
-
-<details>
-  <summary>Installation</summary>
-  
-  We use the environment same to DAB-DETR and DN-DETR to run DINO. If you have run DN-DETR or DAB-DETR, you can skip this step. 
-  We test our models under ```python=3.7.3,pytorch=1.9.0,cuda=11.1```. Other versions might be available as well. Click the `Details` below for more details.
-
-   1. Clone this repo
-   ```sh
-   git clone https://github.com/IDEA-Research/DINO.git
-   cd DINO
-   ```
-
-   2. Install Pytorch and torchvision
-
-   Follow the instruction on https://pytorch.org/get-started/locally/.
-   ```sh
-   # an example:
-   conda install -c pytorch pytorch torchvision
-   ```
-
-   3. Install other needed packages
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-   4. Compiling CUDA operators
-   ```sh
-   cd models/dino/ops
-   python setup.py build install
-   # unit test (should see all checking is True)
-   python test.py
-   cd ../../..
-   ```
-</details>
-
-
-
-
-## Data
-
-<details>
-  <summary>Data</summary>
-
-Please download [COCO 2017](https://cocodataset.org/) dataset and organize them as following:
-```
-COCODIR/
-  ├── train2017/
-  ├── val2017/
-  └── annotations/
-  	├── instances_train2017.json
-  	└── instances_val2017.json
-```
-
-</details>
 
 
 ## Run
