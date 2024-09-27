@@ -18,8 +18,16 @@ This study proposes an end-to-end target detection model that significantly impr
 ![method](figs/f1.png "model arch")
 
 
-## Experimental
+# Experimental
 ![Experimental](figs/table.png)
+
+# Detection effect comparison with DINO
+## small targets
+![small targets](figs/small-targets.png)
+
+## big targets
+![big targets](figs/big-targets.png)
+
 
 ### 12 epoch setting
 <table>
